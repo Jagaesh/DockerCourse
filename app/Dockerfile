@@ -1,7 +1,7 @@
 # Use the official Node.js image
-FROM node:14
+FROM node:18
 
-# Create and change to the app directory
+# Set the working directory in the container
 WORKDIR C:/Development/GitHub/DockerCourse/app
 
 # Copy the package.json and package-lock.json files

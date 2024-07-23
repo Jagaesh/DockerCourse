@@ -12,17 +12,18 @@
     npm init -y
     ```
 
-3. Install the Express framework using npm:
+   Or if you already have a `package.json` file but want to update all dependencies:
     ```bash
-    npm install express
+    npm update
     ```
 
-4. Install the Express framework using npm:
+3. Install the Express & MongoDB frameworks using npm:
     ```bash
+    npm install express
     npm install mongodb
     ```
 
-5. Run the Server:
+4. Run the Server:
     ```bash
     node server.js
     ```
