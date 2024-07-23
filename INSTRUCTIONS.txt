@@ -1,0 +1,23 @@
+# Node.js Project Setup Instructions
+
+**Initialize a Node.js Project**
+
+1. Navigate to your app folder:
+    ```bash
+    cd ./DockerCourse/app
+    ```
+
+2. If you don’t have a `package.json` file, create one by running:
+    ```bash
+    npm init -y
+    ```
+
+3. Install the Express framework using npm:
+    ```bash
+    npm install express
+    ```
+
+4. Run the Server:
+    ```bash
+    node server.js
+    ```
