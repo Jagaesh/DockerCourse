@@ -17,7 +17,12 @@
     npm install express
     ```
 
-4. Run the Server:
+4. Install the Express framework using npm:
+    ```bash
+    npm install mongodb
+    ```
+
+5. Run the Server:
     ```bash
     node server.js
     ```
