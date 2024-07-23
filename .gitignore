@@ -1,0 +1,9 @@
+# Ignore node_modules folders in ./app and ./test subfolders
+./app/node_modules/
+./test/node_modules/
+
+# Ignore package-lock.json and package.json in ./app and ./test subfolders
+./app/package-lock.json
+./app/package.json
+./test/package-lock.json
+./test/package.json
