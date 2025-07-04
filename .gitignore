@@ -1,9 +1,3 @@
 # Ignore node_modules directories in app and test folders
 /app/node_modules/
-/test/node_modules/
-
-# Ignore package-lock.json and package.json files in app and test folders
-/app/package-lock.json
-/app/package.json
-/test/package-lock.json
-/test/package.json
+/app-test/node_modules/
