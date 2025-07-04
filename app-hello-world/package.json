@@ -1,0 +1,12 @@
+{
+  "name": "app-hello-world",
+  "version": "1.0.0",
+  "description": "Une simple app Express qui affiche Hello World",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
