@@ -1,10 +1,12 @@
-FROM node:13-alpine
+FROM node:20-alpine
 
 ENV MONGO_DB_USERNAME=admin \
     MONGO_DB_PWD=password
 
+# create /home/app dir
 RUN mkdir -p /home/app
 
+# copy app files in the /home/app dir
 COPY ./app /home/app
 
 # set default dir so that next commands executes in /home/app dir
