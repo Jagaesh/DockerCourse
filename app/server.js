@@ -25,7 +25,7 @@ app.get('/profile-picture', (req, res) => {
 
 // MongoDB connection URLs
 const mongoUrlLocal = "mongodb://localhost:27017";
-const mongoUrlDocker = "mongodb://admin:password@mongodb";
+const mongoUrlDocker = "mongodb://admin:password@mongo";
 
 // MongoDB options
 const mongoClientOptions = {}; // Removed deprecated options
@@ -36,7 +36,7 @@ const databaseName = "my-db";
 // Update profile endpoint
 app.post('/update-profile', async (req, res) => {
   const userObj = req.body;
-  const client = new MongoClient(mongoUrlLocal, mongoClientOptions);
+  const client = new MongoClient(mongoUrlDocker, mongoClientOptions);
 
   try {
     await client.connect();
@@ -60,7 +60,7 @@ app.post('/update-profile', async (req, res) => {
 
 // Get profile endpoint
 app.get('/get-profile', async (req, res) => {
-  const client = new MongoClient(mongoUrlLocal, mongoClientOptions);
+  const client = new MongoClient(mongoUrlDocker, mongoClientOptions);
   let response = {};
 
   try {
